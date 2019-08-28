@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1002a5"
+    android:orientation="horizontal"
+    android:weightSum="3">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/song_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:gravity="center_vertical"
+            android:paddingTop="5dp"
+            android:text="@string/music_name"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            tools:ignore="RelativeOverlap" />
+
+        <TextView
+            android:id="@+id/album_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/song_name"
+            android:layout_marginStart="16dp"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dp"
+            android:text="@string/album_name"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            tools:ignore="RelativeOverlap" />
+
+        <TextView
+            android:id="@+id/artist_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/song_name"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/album_name"
+            android:paddingBottom="5dp"
+            android:text="@string/artist_name"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="16dp"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:background="#1002a5"
+        android:contentDescription="@string/play_Button"
+        android:maxHeight="100dp"
+        android:maxWidth="100dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/play" />
+
+
+</LinearLayout>

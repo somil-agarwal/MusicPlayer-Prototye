@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#090909"
+    android:orientation="vertical"
+    android:weightSum="3">
+
+    <ImageView
+        android:id="@+id/music"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:contentDescription="@string/music_art"
+        android:background="#000000"
+        android:src="@drawable/player" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/music_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/music_name"
+            android:textColor="#ffffff"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/album_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/music_name"
+            android:layout_marginStart="31dp"
+            android:text="@string/album_name"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/artist_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/music_name"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/album_name"
+            android:text="@string/artist_name"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/artist_name"
+            android:orientation="horizontal">
+
+            <ImageButton
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="#ffffff"
+                android:contentDescription="@string/rewind"
+                android:maxHeight="100dp"
+                android:maxWidth="100dp"
+                android:onClick="Rewind"
+                android:scaleType="fitXY"
+                android:src="@drawable/rewind" />
+
+            <ImageButton
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="#ffffff"
+                android:contentDescription="@string/play"
+                android:maxHeight="100dp"
+                android:maxWidth="100dp"
+                android:onClick="Play"
+                android:scaleType="fitXY"
+                android:src="@drawable/play" />
+
+            <ImageButton
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="#ffffff"
+                android:contentDescription="@string/pause"
+                android:maxHeight="100dp"
+                android:maxWidth="100dp"
+                android:onClick="Pause"
+                android:scaleType="fitXY"
+                android:src="@drawable/pause" />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="#ffffff"
+                android:contentDescription="@string/rewind"
+                android:maxHeight="100dp"
+                android:maxWidth="100dp"
+                android:onClick="Stop"
+                android:scaleType="fitXY"
+                android:src="@drawable/stop" />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="#ffffff"
+                android:contentDescription="@string/forward"
+                android:maxHeight="100dp"
+                android:maxWidth="100dp"
+                android:onClick="Forward"
+                android:scaleType="fitXY"
+                android:src="@drawable/forward" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

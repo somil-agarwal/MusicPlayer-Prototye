@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Music Player</string>
+    <string name="music_art">Music Album</string>
+    <string name="music_name">Music Name</string>
+    <string name="artist_name">Artist Name</string>
+    <string name="rewind">Rewind by 10 sec</string>
+    <string name="pause">pause</string>
+    <string name="stop">stop</string>
+    <string name="play">Play music</string>
+    <string name="forward">forward by 10 sec</string>
+    <string name="album_name">Album name</string>
+    <string name="play_Button">play button</string>
+</resources>
